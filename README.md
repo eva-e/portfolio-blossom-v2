@@ -1,2 +1,28 @@
-# portfolio-blossom-v2
-Multimedia/Visual Artist Portfolio (Currently Redesigning v2) - ευανθία flower; blossom🍡🍀🌸
+<p align="center">
+  <img src="/portfolio-evanthia/images/evalogo.png" width="300">
+</p>
+
+## Multimedia/Visual Artist Portfolio Website (_Development in Progress_)
+
+<p align="left">Folder: /portfolio-evanthia</p>
+<p align="left">Το ψηφιακό μου πορτφόλιο με γραφιστικά έργα και ψηφιακά δημιουργικά πρότζεκτ.</p>
+<p align="left">🍀My Design Portfolio & Personal Website | Multimedia/Visual Artist | Poetry Through Art & Design🌸</p>
+
+<p align="left">Portfolio Design Notes:</p>
+<p align="left">A blend of frutiger aero, dango colour palette, minecraft and nature, in the form of a mixed media website layout. </p>
+
+<p align="left">"Let all that you do be done with love." I Corinthians 16:14 <br>
+🍡</p>
+
+## Author
+
+<p align="left">🌸 Evanthia (Eva) Evgenidis</p>
+
+## Attributions
+
+<p align="left"> Copyright © evanthia | 2026 | All rights reserved</p>
+<br><br>
+
+<p align="center">
+  <img src="src/assets/favicon/dangoeva.png" width="120">
+</p>
