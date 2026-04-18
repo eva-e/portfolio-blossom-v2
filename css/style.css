@@ -1,3 +1,6 @@
+/* Partially used CommunityPro Template */
+/* CommunityPro for base template, design altered by my hand coding as well as some code cleanup by AI */
+
 /* @font-face {
   font-family: "MyFont";
   src: url("fonts/Minecraft.otf") format("opentype");
@@ -7,13 +10,45 @@
   font-family: "MyFont2";
   src: url("fonts/Minecraft-Bold.otf") format("opentype");
 } */
-
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+
+@font-face {
+  font-family: "Minecraft";
+  src: url("/fonts/Minecraft.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Minecraft2";
+  src: url("/fonts/Minecraft-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.main-logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h5,
+.btn,
+.profile-image {
+  max-width: 100%;
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
-  font-family: "Syne", sans-serif;
-  background-image: url("/images/background20261.png");
+  overflow-x: hidden;
+  background-image: url("/images/background20262.png");
   background-position: center;
   background-size: cover;
 
@@ -21,16 +56,19 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
-  padding-top: 80px; /* match navbar height */
+  padding-top: 80px;
 }
 
 .hero {
-  flex: 1; /* fills remaining space */
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* vertical center */
-  align-items: center; /* horizontal center */
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  gap: 6px;
+  transform: translateY(-40px);
+  /* transform for moving content a little higher, looks too low on mobile */
 }
 
 /* h1 {
@@ -46,9 +84,28 @@ h1 {
   font-family: "Syne", sans-serif;
   color: #ffffffeb;
   letter-spacing: 1px;
-  font-weight: 700;
-  border-radius: 20px;
-  padding: 8px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  padding: 12px 20px;
+  white-space: normal;
+  text-align: center;
+
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.877),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.64),
+    inset 0 0 12px 6px rgba(255, 255, 255, 0.911);
+}
+
+h2 {
+  font-family: "Syne", sans-serif;
+  color: #ffffffeb;
+  letter-spacing: 1px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  padding: 12px 20px;
   white-space: normal;
   text-align: center;
 
@@ -59,17 +116,54 @@ h1 {
     inset 0 0 12px 6px rgba(255, 255, 255, 0.827);
 }
 
-h2 {
+h5 {
+  text-transform: italic;
   font-family: "Syne";
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: 600;
   padding: 10px;
   color: #fff;
   margin-left: 0;
   text-align: center;
+  font-style: italic;
+}
+
+.btn {
+  font-family: "Minecraft", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  padding: 12px 20px;
+  border-radius: 33px;
+
+  display: inline-block;
+  background-color: #abfa8cd6;
+  box-shadow:
+    0 8px 32px rgba(179, 255, 178, 0.277),
+    inset 0 1px 0 rgba(255, 255, 255, 0.668),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.346),
+    inset 0 0 12px 6px rgba(255, 255, 255, 0.795);
+}
+
+.btn:hover {
+  background-color: #8cfa9e0e;
+  transition: all 0.3s ease-in-out;
+  transition:
+    all 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.668),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.346),
+    inset 0 0 12px 6px rgba(255, 255, 255, 0.873);
 }
 
 nav ul {
-  list-style: none; /* Removes the dots */
+  list-style: none;
 }
 
 .profile-image {
@@ -93,24 +187,29 @@ nav ul {
   width: 180px;
 }
 
+.main-logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   height: 80px;
   padding: 0 20px;
   z-index: 100;
+  box-sizing: border-box;
 }
 
 .nav-menu.active {
   right: 20px;
-  background-color: #8cfa9e41;
+  background-color: #8cfa9e11;
   /* #9efa8cb0 */
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.1),
@@ -129,33 +228,35 @@ nav ul {
 
 .navbar .nav-link {
   margin: 0 1rem;
-  letter-spacing: 1px;
+  background-color: #abfa8cd6;
+  letter-spacing: 1.2px;
   text-decoration: none;
-  font-size: 0.8rem;
-  font-weight: 500;
+  font-size: 0.7rem;
   font-family: "Minecraft", sans-serif;
   font-weight: 700;
   color: #ffffff;
-  padding: 8px 15px;
+  padding: 10px 20px;
   border-radius: 33px;
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0),
     inset 0 1px 0 rgba(255, 255, 255, 0.322),
     inset 0 -1px 0 rgba(255, 255, 255, 0.1),
-    inset 0 0 12px 6px rgba(255, 255, 255, 0.146);
+    inset 0 0 12px 6px rgba(255, 255, 255, 0.658);
 }
+
 /* NAV BUTTONS */
 .navbar .nav-link:hover {
-  background-color: #8cfe8c7b;
+  background-color: #8cfa9e0e;
+
   transition: all 0.3s ease-in-out;
   transition:
     all 0.3s ease-in-out,
     border-color 0.3s ease-in-out;
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.51),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
     inset 0 -1px 0 rgba(255, 255, 255, 0.1),
-    inset 0 0 12px 6px rgba(255, 255, 255, 0.64);
+    inset 0 0 12px 6px rgba(255, 255, 255, 0.62);
 
   /* outline: 2px solid #ffd4e1; outlines the link */
 }
@@ -178,16 +279,37 @@ nav ul {
   /* .navbar .nav-menu {
     display: none;
   } */
+  /* The nav menu is rounded, top right corner, transition when it pops out, 
+  it's a simple design */
+
+  body {
+    /* or 100% auto */
+    background-size: cover;
+    background-position: 82% 32%;
+    background-repeat: no-repeat;
+    /* background-position: center;
+    background-size: cover; */
+  }
 
   .nav-menu {
     position: fixed;
+    /* doesn't move */
     top: 80px;
+    gap: 4px;
     right: -100%;
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: min(80vw, 320px);
     padding: 4rem;
     transition: 0.3s;
+    box-sizing: border-box;
+    border-radius: 30px;
+  }
+
+  h1,
+  h5,
+  h2 {
+    max-width: 90vw;
   }
 
   .nav-menu.active {
@@ -238,12 +360,19 @@ nav ul {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+}
 
-  body {
-    /* or 100% auto */
-    background-position: 80% 35%;
-    background-repeat: no-repeat;
-    /* background-position: center;
-    background-size: cover; */
-  }
+#footer {
+  font-family: "Minecraft";
+  color: white;
+  margin-top: auto;
+  bottom: 0;
+  margin-left: 20px;
+  margin-bottom: 16px;
+  left: 0;
+  font-size: 12px;
+  width: 100%;
+  padding: 10px;
+  box-shadow: none;
+  text-align: left;
 }
