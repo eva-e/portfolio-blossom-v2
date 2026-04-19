@@ -4,7 +4,7 @@
 
 ## Multimedia/Visual Artist Portfolio Website (_Development in Progress_)
 
-<p align="left">Folder: /portfolio-evanthia</p>
+
 <p align="left">Το ψηφιακό μου πορτφόλιο με γραφιστικά έργα και ψηφιακά δημιουργικά πρότζεκτ.</p>
 <p align="left">🍀My Design Portfolio & Personal Website | Multimedia/Visual Artist | Poetry Through Art & Design🌸</p>
 
