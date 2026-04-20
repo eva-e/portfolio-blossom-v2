@@ -48,7 +48,7 @@ h5,
 body {
   margin: 0;
   overflow-x: hidden;
-  background-image: url("/images/background20262.png");
+  background-image: url("/images/background20263.png");
   background-position: center;
   background-size: cover;
 
@@ -138,7 +138,7 @@ h5 {
   padding: 12px 20px;
   border-radius: 33px;
   display: inline-block;
-  background-color: #abfa8cd6;
+  background-color: #abfa8cda;
   box-shadow:
     0 8px 32px rgba(179, 255, 178, 0.277),
     inset 0 1px 0 rgba(255, 255, 255, 0.668),
@@ -206,10 +206,10 @@ nav ul {
 
 .nav-menu.active {
   right: 20px;
-  background-color: #8cfa9e11;
+  background-color: #ffffff8f;
   /* #9efa8cb0 */
   box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.1),
+    0 8px 32px rgba(0, 0, 0, 0.137),
     inset 0 1px 0 rgba(255, 255, 255, 0.5),
     inset 0 -1px 0 rgba(255, 255, 255, 0.1),
     inset 0 0 12px 6px rgba(255, 255, 255, 0.827);
@@ -225,7 +225,8 @@ nav ul {
 
 .navbar .nav-link {
   margin: 0 1rem;
-  background-color: #abfa8cd6;
+  background-color: #abfa8cb3;
+  /* #abfa8cd6; nav button colour */
   letter-spacing: 1.2px;
   text-decoration: none;
   font-size: 0.7rem;
@@ -244,7 +245,7 @@ nav ul {
 /* Transitions from CommunityPro template */
 /* NAV BUTTONS */
 .navbar .nav-link:hover {
-  background-color: #8cfa9e0e;
+  background-color: #8cfa9e00;
 
   transition: all 0.3s ease-in-out;
   transition:
@@ -254,7 +255,7 @@ nav ul {
     0 8px 32px rgba(0, 0, 0, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.5),
     inset 0 -1px 0 rgba(255, 255, 255, 0.1),
-    inset 0 0 12px 6px rgba(255, 255, 255, 0.62);
+    inset 0 0 12px 6px rgba(255, 255, 255, 0.586);
 
   /* outline: 2px solid #ffd4e1; outlines the link */
 }
@@ -283,13 +284,13 @@ div.gallery-item div.desc {
   text-align: center;
   font-family: "Syne", sans-serif;
   color: #ffffffd6;
-  background-color: #abfa8c99;
+  background-color: #95e77493;
   border-radius: 20px;
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.099),
     inset 0 1px 0 rgba(255, 255, 255, 0.322),
     inset 0 -1px 0 rgba(255, 255, 255, 0.1),
-    inset 0 0 12px 6px rgba(255, 255, 255, 0.685);
+    inset 0 0 12px 6px rgba(255, 255, 255, 0.705);
   font-weight: 700;
 }
 
@@ -300,7 +301,7 @@ div.gallery {
   margin-top: 50px;
   padding: 20px;
 
-  background-color: #ffffffeb;
+  background-color: #ffffff;
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0),
     inset 0 1px 0 rgba(255, 255, 255, 0.771),
