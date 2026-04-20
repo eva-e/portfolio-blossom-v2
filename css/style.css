@@ -376,3 +376,35 @@ nav ul {
   box-shadow: none;
   text-align: left;
 }
+
+/* https://www.w3schools.com/css/css_image_gallery.asp */
+/* \Image gallery from W3 */
+/* IMAGE GALLERY */
+
+div.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 13px;
+}
+
+div.gallery-item {
+  width: 300px; /* or 400px, etc */
+}
+
+/* div.gallery-item:hover {
+  border-radius: 20px;
+  border-color: #f49999;
+  box-shadow: #f49999;
+} */
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+}
