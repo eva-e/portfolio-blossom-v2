@@ -277,17 +277,34 @@ nav ul {
 /* \Image gallery from W3 */
 /* IMAGE GALLERY */
 
+div.gallery-item div.desc {
+  padding: 14px;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Syne", sans-serif;
+  color: #ffffffd6;
+  background-color: #abfa8c99;
+  border-radius: 20px;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.099),
+    inset 0 1px 0 rgba(255, 255, 255, 0.322),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 12px 6px rgba(255, 255, 255, 0.685);
+  font-weight: 700;
+}
+
 div.gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 13px;
   margin-top: 50px;
   padding: 20px;
-  border-radius: 20px;
+
+  background-color: #ffffffeb;
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0),
-    inset 0 1px 0 rgba(255, 255, 255, 0.322),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.771),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.897),
     inset 0 0 12px 6px rgba(255, 255, 255, 0.658);
 }
 
@@ -304,21 +321,6 @@ div.gallery-item {
 div.gallery-item img {
   width: 100%;
   height: auto;
-}
-
-div.gallery-item div.desc {
-  padding: 14px;
-  margin-top: 10px;
-  text-align: center;
-  font-family: "Syne", sans-serif;
-  color: white;
-  border-radius: 20px;
-  box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0),
-    inset 0 1px 0 rgba(255, 255, 255, 0.322),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
-    inset 0 0 12px 6px rgba(255, 255, 255, 0.658);
-  font-weight: 700;
 }
 
 @media (max-width: 767px) {
