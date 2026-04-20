@@ -4,9 +4,9 @@
 
 ## Multimedia/Visual Artist Portfolio Website (_Development in Progress_)
 
-<p align="left">Folder: /portfolio-evanthia</p>
+
 <p align="left">Το ψηφιακό μου πορτφόλιο με γραφιστικά έργα και ψηφιακά δημιουργικά πρότζεκτ.</p>
-<p align="left">🍀My Design Portfolio & Personal Website | Multimedia/Visual Artist | Poetry Through Art & Design🌸</p>
+<p align="left">🍀Personal Website | Multimedia/Visual Artist Portfolio | Poetry Through Art & Design 🌸</p>
 
 <p align="left">Portfolio Design Notes:</p>
 <p align="left">A blend of frutiger aero, dango colour palette, minecraft and nature, in the form of a mixed media website layout. </p>
