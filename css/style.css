@@ -26,6 +26,7 @@
   font-style: normal;
 }
 
+/* https://hype4.academy/tools/glassmorphism-generator Link to the glass effect code I used */
 html {
   overflow-x: hidden;
 }
@@ -35,7 +36,7 @@ html {
   max-width: 100%;
   height: auto;
 }
-
+/* keeping all intro contents the same */
 h1,
 h2,
 h5,
