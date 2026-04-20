@@ -58,7 +58,7 @@ body {
 
   padding-top: 80px;
 }
-
+/* moves the whole intro along the y axis - translate y -40px  */
 .hero {
   flex: 1;
   display: flex;
@@ -133,13 +133,10 @@ h5 {
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 1.2px;
-
   color: #ffffff;
   text-decoration: none;
-
   padding: 12px 20px;
   border-radius: 33px;
-
   display: inline-block;
   background-color: #abfa8cd6;
   box-shadow:
@@ -244,6 +241,7 @@ nav ul {
     inset 0 0 12px 6px rgba(255, 255, 255, 0.658);
 }
 
+/* Transitions from CommunityPro template */
 /* NAV BUTTONS */
 .navbar .nav-link:hover {
   background-color: #8cfa9e0e;
@@ -275,6 +273,54 @@ nav ul {
   border-radius: 30px;
 }
 
+/* https://www.w3schools.com/css/css_image_gallery.asp */
+/* \Image gallery from W3 */
+/* IMAGE GALLERY */
+
+div.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 13px;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0),
+    inset 0 1px 0 rgba(255, 255, 255, 0.322),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 12px 6px rgba(255, 255, 255, 0.658);
+}
+
+div.gallery-item {
+  width: 400px; /* or 400px, etc */
+}
+
+/* div.gallery-item:hover {
+  border-radius: 20px;
+  border-color: #f49999;
+  box-shadow: #f49999;
+} */
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item div.desc {
+  padding: 14px;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Syne", sans-serif;
+  color: white;
+  border-radius: 20px;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0),
+    inset 0 1px 0 rgba(255, 255, 255, 0.322),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 12px 6px rgba(255, 255, 255, 0.658);
+  font-weight: 700;
+}
+
 @media (max-width: 767px) {
   /* .navbar .nav-menu {
     display: none;
@@ -291,6 +337,18 @@ nav ul {
     background-size: cover; */
   }
 
+  div.gallery {
+    grid-template-columns: 1fr;
+    gap: 13px;
+    justify-items: center;
+  }
+
+  div.gallery-item {
+    width: 100%; /* so the images can fit to the screen*/
+    border-radius: 20%;
+  }
+
+  /* width based on screesize */
   .nav-menu {
     position: fixed;
     /* doesn't move */
@@ -375,36 +433,4 @@ nav ul {
   padding: 10px;
   box-shadow: none;
   text-align: left;
-}
-
-/* https://www.w3schools.com/css/css_image_gallery.asp */
-/* \Image gallery from W3 */
-/* IMAGE GALLERY */
-
-div.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 13px;
-}
-
-div.gallery-item {
-  width: 300px; /* or 400px, etc */
-}
-
-/* div.gallery-item:hover {
-  border-radius: 20px;
-  border-color: #f49999;
-  box-shadow: #f49999;
-} */
-
-div.gallery-item img {
-  width: 100%;
-  height: auto;
-}
-
-div.gallery-item div.desc {
-  padding: 15px;
-  text-align: center;
-  font-family: "Syne", sans-serif;
-  font-weight: 700;
 }
