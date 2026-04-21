@@ -62,6 +62,8 @@ body {
   padding-top: 80px;
 }
 /* moves the whole intro along the y axis - translate y -40px  */
+/* https://stackoverflow.com/questions/46569692/displaying-flexbox-centered-but-align-items-left-like-text-align-left helped with fixing some issues */
+
 .hero {
   flex: 1;
   display: flex;
@@ -70,8 +72,94 @@ body {
   align-items: center;
   text-align: center;
   gap: 6px;
-  transform: translateY(-40px);
+  margin-top: -40px;
+  /* transform: translateY(-40px); */
   /* transform for moving content a little higher, looks too low on mobile */
+}
+
+.hero-about {
+  /* flex: 1; */
+  display: flex;
+  padding-top: 70px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0px auto;
+  flex: 1 0 auto;
+  margin-left: 25%;
+  /* text-align: left; */
+  gap: 6px;
+  /* transform: translateY(-70px); */
+}
+
+.hero-about p {
+  font-family: "Syne", sans-serif;
+  color: #ffffffeb;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 0.8rem;
+
+  border-radius: 30px;
+  padding: 12px 20px;
+  white-space: normal;
+  background-color: #abfa8cb4;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 12px 6px rgba(255, 255, 255, 0.827);
+}
+
+.hero-about li {
+  font-family: "Syne", sans-serif;
+  color: #ffffffeb;
+  letter-spacing: 1px;
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 30px;
+  padding: 12px 20px;
+  white-space: normal;
+  background-color: #abfa8cb4;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 12px 6px rgba(255, 255, 255, 0.827);
+}
+
+.hero-about h5 {
+  font-family: "Syne", sans-serif;
+  color: #ffffffeb;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  padding: 12px 20px;
+  white-space: normal;
+
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 12px 6px rgba(255, 255, 255, 0.827);
+}
+
+.hero-about h2 {
+  font-family: "Syne", sans-serif;
+  color: #ffffffeb;
+  letter-spacing: 1px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  padding: 12px 20px;
+  white-space: normal;
+
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 12px 6px rgba(255, 255, 255, 0.827);
 }
 
 /* h1 {
@@ -135,6 +223,7 @@ h5 {
   font-family: "Minecraft", sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
+
   letter-spacing: 1.2px;
   color: #ffffff;
   text-decoration: none;
@@ -341,6 +430,13 @@ div.gallery-item img {
     background-repeat: no-repeat;
     /* background-position: center;
     background-size: cover; */
+  }
+
+  .hero-about {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    align-items: left;
   }
 
   div.gallery {
