@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/images/evanthialogo2026.png.png" width="300">
+  <img src="/images/evanthialogo2026.png" width="300">
 </p>
 
 ## Multimedia/Visual Artist Portfolio Website (_Development in Progress_)
