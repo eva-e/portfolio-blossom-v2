@@ -209,7 +209,7 @@ nav ul {
 
 .nav-menu.active {
   right: 20px;
-  background-color: #ffffff8f;
+  background-color: #ffffff0a;
   /* #9efa8cb0 */
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.137),
@@ -228,7 +228,7 @@ nav ul {
 
 .navbar .nav-link {
   margin: 0 1rem;
-  background-color: #abfa8cb3;
+  background-color: #abfa8cc2;
   /* #abfa8cd6; nav button colour */
   letter-spacing: 1.2px;
   text-decoration: none;
