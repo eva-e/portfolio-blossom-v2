@@ -52,7 +52,9 @@ body {
   background-image: url("/images/background20263.png");
   background-position: center;
   background-size: cover;
-
+  cursor:
+    url("/favicon/favicon2.ico") 2 1,
+    auto;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
