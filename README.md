@@ -1,11 +1,9 @@
 <p align="center">
-  <img src="/portfolio-evanthia/images/evalogo.png" width="300">
+  <img src="/portfolio-evanthia/images/evanthialogo2026.png" width="300">
 </p>
 
 ## Multimedia/Visual Artist Portfolio Website (_Development in Progress_)
 
-
-<p align="left">Το ψηφιακό μου πορτφόλιο με γραφιστικά έργα και ψηφιακά δημιουργικά πρότζεκτ.</p>
 <p align="left">🍀Personal Website | Multimedia/Visual Artist Portfolio | Poetry Through Art & Design 🌸</p>
 
 <p align="left">Portfolio Design Notes:</p>
