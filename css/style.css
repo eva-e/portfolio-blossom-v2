@@ -86,7 +86,7 @@ body {
   align-items: flex-start;
   margin: 0px auto;
   flex: 1 0 auto;
-  margin-left: 25%;
+  margin-left: 24%;
   /* text-align: left; */
   gap: 6px;
   /* transform: translateY(-70px); */
@@ -97,10 +97,10 @@ body {
   color: #ffffffeb;
   letter-spacing: 1px;
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 
   border-radius: 30px;
-  padding: 12px 20px;
+  padding: 14px 24px;
   white-space: normal;
   background-color: #abfa8cb4;
   box-shadow:
@@ -386,6 +386,61 @@ div.gallery-item div.desc {
   font-weight: 700;
 }
 
+div.project-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-top: 50px;
+  padding: 30px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #95e7742d;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0),
+    inset 0 1px 0 rgba(255, 255, 255, 0.771),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.897),
+    inset 0 0 12px 6px rgba(255, 255, 255, 0.658);
+}
+
+div.project-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+div.project-item .desc {
+  font-size: 0.9rem;
+  padding: 30px;
+  border-radius: 30px;
+  margin-top: 10px;
+  text-align: left;
+  font-family: "Syne", sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #95e774a4;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0),
+    inset 0 1px 0 rgba(255, 255, 255, 0.771),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.897),
+    inset 0 0 12px 6px rgba(255, 255, 255, 0.658);
+}
+
+div.project-item iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 50px;
+}
+/* div.gallery-item p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+  align-items: center;
+} */
+
 div.gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -402,7 +457,7 @@ div.gallery {
 }
 
 div.gallery-item {
-  width: 400px; /* or 400px, etc */
+  width: 400px;
 }
 
 /* div.gallery-item:hover {
@@ -432,6 +487,10 @@ div.gallery-item img {
     background-size: cover; */
   }
 
+  div.project-item {
+    grid-template-columns: 1fr;
+  }
+
   .hero-about {
     width: 90%;
     max-width: 400px;
@@ -451,9 +510,10 @@ div.gallery-item img {
   }
 
   /* width based on screesize */
+
   .nav-menu {
     position: fixed;
-    /* doesn't move */
+
     top: 80px;
     gap: 4px;
     right: -100%;
