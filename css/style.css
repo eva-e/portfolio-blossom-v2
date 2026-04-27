@@ -90,7 +90,7 @@ body {
   align-items: flex-start;
   margin: 0px auto;
   flex: 1 0 auto;
-  margin-left: 23%;
+  /* margin-left: 23%; */
   /* text-align: left; */
   gap: 6px;
   /* transform: translateY(-70px); */
