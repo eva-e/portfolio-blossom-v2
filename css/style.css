@@ -470,7 +470,7 @@ div.project-item iframe {
 
 div.project-item img {
   width: 100%;
-  height: 300px;
+  height: auto;
   border-radius: 50px;
 }
 /* div.gallery-item p {
@@ -531,6 +531,18 @@ div.gallery-item img {
 
   div.project-item {
     grid-template-columns: 1fr;
+  }
+
+  div.project-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+  }
+
+  div.project-item iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
   }
 
   .hero-about {
