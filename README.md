@@ -22,5 +22,5 @@
 <br><br>
 
 <p align="center">
-  <img src="/images/dangoeva.png" width="120">
+  <img src="/images/dangoeva2.png" width="120">
 </p>
