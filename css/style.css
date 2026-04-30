@@ -246,13 +246,14 @@ h5 {
   font-family: "Minecraft", sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
+  display: flex;
 
   letter-spacing: 1.2px;
   color: #ffffff;
   text-decoration: none;
   padding: 12px 20px;
   border-radius: 33px;
-  display: inline-block;
+  /* display: inline-block; */
   background-color: #fff0c3b2;
   /* background-color: #abfa8cc2; */
   box-shadow:
