@@ -7,6 +7,7 @@ using a low shutter speed setting, creating a smudge like effect,
 as well as added some real objects found on Canva. Buttons, hydrangea petals, hearts, clovers.
 I haven't used any reference websites, except I was insired by 2000s UI and Apple IOS 26. 
 I also intended for this to reflect my childhood and cherished memories. */
+/* Making a grid list https://jamesg.blog/2024/11/23/two-column-css-grid-list */
 
 /* @font-face {
   font-family: "MyFont";
@@ -109,7 +110,7 @@ body {
   border-radius: 30px;
   padding: 14px 24px;
   white-space: normal;
-  background-color: #abfa8cb4;
+  background-color: #abfa8cce;
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.5),
@@ -127,12 +128,19 @@ body {
   border-radius: 30px;
   padding: 12px 20px;
   white-space: normal;
+  width: fit-content;
   background-color: #abfa8cb4;
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.5),
     inset 0 -1px 0 rgba(255, 255, 255, 0.1),
     inset 0 0 12px 6px rgba(255, 255, 255, 0.827);
+}
+
+.skill-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
 .hero-about h5 {
