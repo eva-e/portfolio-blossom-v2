@@ -106,7 +106,6 @@ body {
   letter-spacing: 1px;
   font-weight: 700;
   font-size: 0.9rem;
-
   border-radius: 30px;
   padding: 14px 24px;
   white-space: normal;
@@ -253,12 +252,20 @@ h5 {
     inset 0 0 12px 6px rgba(255, 255, 255, 0.712);
 }
 
+/* .btn-socials a {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+} */
 .btn-socials {
+  display: flex;
+  gap: 12px;
+  margin-left: 8px;
+}
+
+.btn-socials a {
   font-family: "Minecraft", sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
-  display: flex;
-
   letter-spacing: 1.2px;
   color: #ffffff;
   text-decoration: none;
@@ -274,7 +281,7 @@ h5 {
     inset 0 0 12px 6px rgba(255, 255, 255, 0.658);
 }
 
-.btn-socials:hover {
+.btn-socials a:hover {
   background-color: #ffffff03;
   transition: all 0.3s ease-in-out;
   transition:
@@ -572,10 +579,13 @@ div.gallery-item img {
   }
 
   div.gallery-item {
-    width: 100%; /* so the images can fit to the screen*/
+    width: 100%;
     border-radius: 20%;
   }
-
+  .skill-list {
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+  }
   /* width based on screesize */
 
   .nav-menu {
